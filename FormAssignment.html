@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>FormSolution</title>
+  </head>
+  <body>
+  	<header>
+  		<h1>Register</h1>
+  	</header>
+  	<main>
+  		<form method="GET" action="">
+  			<div id="name">
+  				<label for="firstname">First Name:</label>
+  				<input id="firstname" type="text" name="firstname" placeholder="John" required>
+  				<label for="lastname">Last Name:</label>
+  				<input id="lastname" type="text" name="lastname" placeholder="Smith" required>
+  			</div>
+  			<div id="gender">
+  				<label for="male">Male</label>
+  				<input type="radio" name="gender" id="male">
+  				<label for="female">Female</label>
+  				<input type="radio" name="gender" id="female">
+  				<label for="other">Other</label>
+  				<input type="radio" name="gender" id="other">
+  			</div>
+  			<div id="details">
+  				<label for="email">
+  					Email:
+  					<input type="email" name="email" placeholder="your email" required>
+  				</label>
+  				<label>
+  					Password:
+  					<input type="password" name="password" pattern="{5-10}">
+  				</label>  				
+  			</div>
+  			<div id="birthday">
+  				<label>
+  					Birthday:
+  					<select name="month">
+  						<option value="no selection">Month</option>
+  						<option value="january">January</option>
+  						<option value="febuary">Febuary</option>
+  					</select>
+  					<select name="day">
+  						<option value="no selection">Day</option>
+  						<option value="1">1</option>
+  						<option value="2">2</option>
+  					</select>
+  					<select name="year">
+  						<option value="no selection">Year</option>
+  						<option value="1999">1999</option>
+  						<option value="2000">2000</option>
+  					</select>
+  			</label>
+  			</div>
+  			<div id="toc">
+  				<label for="toc">I agree to all the terms and conditions.</label>
+  				<input id="toc" type="checkbox" name="toc">
+  			</div>
+  			<div id="submit">
+  			<input type="submit">	
+  			</div>
+  		</form>
+  	</main>
+  </body>
+</html>
